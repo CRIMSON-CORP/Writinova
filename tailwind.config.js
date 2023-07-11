@@ -5,8 +5,10 @@ export default {
     extend: {
       colors: {
         'primary-orange': '#FE7F3C',
+        'primary-yellow': '#FFE141',
         'black-paragraph': '#494A4D',
         'black-link': '#01020F',
+        'faint-purple': '#FAF8FF',
       },
       container: {
         center: true,

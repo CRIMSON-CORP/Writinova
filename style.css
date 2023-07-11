@@ -52,3 +52,9 @@ body {
     @apply bg-primary-orange;
   }
 }
+
+@layer custom {
+  #hero h1 {
+    font-kerning: none;
+  }
+}

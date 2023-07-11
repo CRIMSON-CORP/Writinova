@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -15,7 +15,7 @@
     <title>Writivo</title>
   </head>
   <body>
-    <header class="absolute w-full">
+    <header class="absolute w-full z-40">
       <div class="container">
         <div class="flex items-center justify-between pt-11">
           <div class="logo">
@@ -24,19 +24,24 @@
           <a href="/how-it-works.html" class="text-black-link font-medium"
             >How it works</a
           >
-          <button class="button button-primary">Start Writing</button>
+          <div>
+            <button class="button button-primary">Start Writing</button>
+          </div>
         </div>
       </div>
     </header>
     <main>
-      <section id="hero">
-        <div class="pt-44">
+      <section
+        id="hero"
+        class="bg-[url('/hero-background-pattern.svg')] bg-no-repeat"
+      >
+        <div class="pt-44 isolate">
           <div class="container">
             <div
               class="text-center flex flex-col items-center gap-7 max-w-3xl mx-auto"
             >
               <h1 class="text-[64px]">
-                The Best Online AI Writing Assistsnt for
+                The Best Online AI Writing Assistant for
                 <span class="text-primary-orange">Presentation</span>
               </h1>
               <p>
@@ -45,9 +50,11 @@
                 Lorem Ipsum has been the industry's standard dummy text ever
                 since the 1500s
               </p>
-              <button class="button button-primary text-2xl">
-                <span class="py-2 px-6 inline-block"> Start Writing</span>
-              </button>
+              <div>
+                <button class="button button-primary text-2xl">
+                  <span class="py-2 px-6 inline-block"> Start Writing</span>
+                </button>
+              </div>
             </div>
           </div>
           <div>
@@ -56,8 +63,8 @@
               height="637"
               viewBox="0 0 1440 637"
               fill="none"
-              id="her-artwork"
-              class="w-full relative -top-32"
+              id="hero-artwork"
+              class="w-full relative -top-32 -z-10"
               xmlns="http://www.w3.org/2000/svg"
             >
               <g clip-path="url(#clip0_1170_17469)">
@@ -864,8 +871,20 @@
                 stroke-width="0.363237"
                 stroke-miterlimit="10"
               />
-              <circle cx="717.5" cy="402" r="17.5" fill="#D9D9D9" />
-              <circle cx="912" cy="182" r="26" fill="#D9D9D9" />
+              <circle
+                cx="717.5"
+                cy="402"
+                r="17.5"
+                stroke="#FE7F3C"
+                stroke-width="1"
+              />
+              <circle
+                cx="912"
+                cy="182"
+                r="26"
+                stroke="#000000"
+                stroke-width="1"
+              />
               <defs>
                 <clipPath id="clip0_1170_17469">
                   <rect
@@ -925,6 +944,220 @@
                 </clipPath>
               </defs>
             </svg>
+          </div>
+        </div>
+      </section>
+      <section id="how">
+        <header class="flex flex-col items-center mb-14">
+          <h2
+            class="text-center text-5xl leading-tight font-medium text-black-link capitalize"
+          >
+            Start writing like a pro <br />
+            with our aI writing Assistant
+          </h2>
+          <svg
+            width="478"
+            height="46"
+            viewBox="0 0 478 46"
+            fill="none"
+            id="underline-primary"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M1.50278 8C1.30777 8.78004 11.4347 7.79969 12.0861 7.75C25.5037 6.72663 38.931 5.55959 52.3639 4.77778C92.4991 2.44187 132.978 3.97506 173.058 6.61111C194.599 8.02784 216.53 8.55758 237.836 12.2778C240.931 12.8181 260.347 14.672 258.142 21.1667C257.432 23.257 254.708 24.3291 252.947 25.1667C247.613 27.7033 242.05 29.7086 236.447 31.5556C224.004 35.6578 211.249 38.9873 199.003 43.6667C193.944 45.5998 200.808 44.6116 202.281 44.3889C215.266 42.4246 228.189 40.0686 241.114 37.75C257.067 34.8881 273.14 32.646 289.169 30.2778C331.477 24.0272 373.775 17.3439 416.225 12.1111C428.347 10.6169 440.545 9.85684 452.669 8.38889C458.291 7.70821 463.954 6.8337 469.614 6.52778C471.104 6.4472 472.376 6.61174 473.753 6C475.48 5.23245 475.273 3.20182 476.003 1.5"
+              stroke="#FE7F3C"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+          </svg>
+        </header>
+        <div class="container">
+          <div class="flex flex-col gap-14">
+            <article class="items-center grid grid-cols-[0.95fr_1fr]">
+              <header class="flex flex-col gap-5 p-5">
+                <h3 class="text-primary-orange font-medium text-5xl">
+                  Business Proposals
+                </h3>
+                <p class="text-black-paragraph w-11/12">
+                  Presenting a persuasive and professional business proposal is
+                  essential for attracting clients and securing partnerships.
+                  Our AI platform assists you in crafting a compelling
+                  narrative, organizing your ideas, and creating visually
+                  appealing proposals.
+                </p>
+                <a href="/learn-more" class="flex items-center gap-2"
+                  ><span class="text-primary-orange">Learn more</span>
+                  <img src="/primary-arrow.svg" alt="orange arrow"
+                /></a>
+              </header>
+              <div>
+                <img src="/business-proposals.png" alt="business proposals" />
+              </div>
+            </article>
+            <article class="items-center grid grid-cols-[1fr_0.95fr]">
+              <div class="bg-faint-purple rounded-[10px] h-full p-20 pl-44">
+                <div class="bg-white rounded-xl p-7 flex flex-col gap-3">
+                  <div
+                    class="relative bg-primary-orange rounded aspect-[278/160]"
+                  >
+                    <img
+                      src="/team-call.svg"
+                      alt="team call card"
+                      class="absolute -left-[30%] -top-[30%]"
+                    />
+                    <img
+                      src="/smiling woman.png"
+                      alt="smiling woman"
+                      class="absolute -bottom-[1px] w-4/5 mx-auto left-1/2 -translate-x-1/2"
+                    />
+                  </div>
+                  <div class="flex items-center gap-2 5">
+                    <div class="flex items-center">
+                      <img
+                        src="/smiling-man-1.png"
+                        alt="smiling man"
+                        width="32"
+                        height="32"
+                        class="w-8 h-8 rounded-full"
+                      />
+                      <img
+                        src="/smiling-man-2.png"
+                        alt="smiling man"
+                        width="32"
+                        height="32"
+                        class="w-8 h-8 rounded-full bg-[#DAF4FE]"
+                      />
+                    </div>
+                    <p class="text-[9px]">See all call members</p>
+                  </div>
+                </div>
+              </div>
+              <header class="flex flex-col gap-5 p-5">
+                <h3 class="text-primary-orange font-medium text-5xl">
+                  Student Projects
+                </h3>
+                <p class="text-black-paragraph w-11/12">
+                  When working on your student project, our AI platform serves
+                  as your virtual collaborator. It offers suggestions for
+                  research materials, provides guidance on structuring your
+                  project, and helps improve the clarity and coherence of your
+                  content.
+                </p>
+                <a href="/learn-more" class="flex items-center gap-2"
+                  ><span class="text-primary-orange">Learn more</span>
+                  <img src="/primary-arrow.svg" alt="orange arrow"
+                /></a>
+              </header>
+            </article>
+            <article class="items-center grid grid-cols-[0.95fr_1fr]">
+              <header class="flex flex-col gap-5 p-5">
+                <h3 class="text-primary-orange font-medium text-5xl">
+                  Project Proposals
+                </h3>
+                <p class="text-black-paragraph w-11/12">
+                  Crafting a compelling project proposal is crucial for securing
+                  approval and funding. Our AI platform provides you with
+                  valuable assistance in articulating your project goals,
+                  methodology, and expected outcomes.
+                </p>
+                <a href="/learn-more" class="flex items-center gap-2"
+                  ><span class="text-primary-orange">Learn more</span>
+                  <img src="/primary-arrow.svg" alt="orange arrow"
+                /></a>
+              </header>
+              <div class="bg-faint-purple rounded-[10px] h-full p-20 pl-44">
+                <div class="bg-white rounded-xl p-7 flex flex-col gap-3">
+                  <div
+                    class="relative bg-primary-yellow rounded aspect-[278/160]"
+                  >
+                    <img
+                      src="/team-call.svg"
+                      alt="team call card"
+                      class="absolute -left-[30%] -top-[30%]"
+                    />
+                    <img
+                      src="/smiling woman.png"
+                      alt="smiling woman"
+                      class="absolute -bottom-[1px] w-4/5 mx-auto left-1/2 -translate-x-1/2"
+                    />
+                  </div>
+                  <div class="flex items-center gap-2 5">
+                    <div class="flex items-center">
+                      <img
+                        src="/smiling-man-1.png"
+                        alt="smiling man"
+                        width="32"
+                        height="32"
+                        class="w-8 h-8 rounded-full"
+                      />
+                      <img
+                        src="/smiling-man-2.png"
+                        alt="smiling man"
+                        width="32"
+                        height="32"
+                        class="w-8 h-8 rounded-full bg-[#DAF4FE]"
+                      />
+                    </div>
+                    <p class="text-[9px]">See all call members</p>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="items-center grid grid-cols-[1fr_0.95fr]">
+              <div class="bg-faint-purple rounded-[10px] h-full p-20 pl-44">
+                <div class="bg-white rounded-xl p-7 flex flex-col gap-3">
+                  <div
+                    class="relative bg-primary-orange rounded aspect-[278/160]"
+                  >
+                    <img
+                      src="/team-call.svg"
+                      alt="team call card"
+                      class="absolute -left-[30%] -top-[30%]"
+                    />
+                    <img
+                      src="/smiling woman.png"
+                      alt="smiling woman"
+                      class="absolute -bottom-[1px] w-4/5 mx-auto left-1/2 -translate-x-1/2"
+                    />
+                  </div>
+                  <div class="flex items-center gap-2 5">
+                    <div class="flex items-center">
+                      <img
+                        src="/smiling-man-1.png"
+                        alt="smiling man"
+                        width="32"
+                        height="32"
+                        class="w-8 h-8 rounded-full"
+                      />
+                      <img
+                        src="/smiling-man-2.png"
+                        alt="smiling man"
+                        width="32"
+                        height="32"
+                        class="w-8 h-8 rounded-full bg-[#DAF4FE]"
+                      />
+                    </div>
+                    <p class="text-[9px]">See all call members</p>
+                  </div>
+                </div>
+              </div>
+              <header class="flex flex-col gap-5 p-5">
+                <h3 class="text-primary-orange font-medium text-5xl">
+                  IT Logbook/Report
+                </h3>
+                <p class="text-black-paragraph w-11/12">
+                  If you're looking for guidance on how to fill a SIWES/IT log
+                  book or seeking a sample log book report in PDF format, our
+                  platform is here to support you. It offers practical examples
+                  and resources to help you understand the process and structure
+                  your own log book effectively.
+                </p>
+                <a href="/learn-more" class="flex items-center gap-2"
+                  ><span class="text-primary-orange">Learn more</span>
+                  <img src="/primary-arrow.svg" alt="orange arrow"
+                /></a>
+              </header>
+            </article>
           </div>
         </div>
       </section>
