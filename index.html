@@ -17,13 +17,10 @@
   <body>
     <header class="absolute w-full z-40">
       <div class="container">
-        <div class="flex items-center justify-between pt-11">
+        <div class="flex items-center justify-between sm:pt-11 pt-6">
           <div class="logo">
-            <img src="/logo.svg" alt="writivo logo" />
+            <img src="/logo.svg" alt="writivo logo" class="w-9/12 sm:w-auto" />
           </div>
-          <a href="/how-it-works.html" class="text-black-link font-medium"
-            >How it works</a
-          >
           <div>
             <button class="button button-primary">Start Writing</button>
           </div>
@@ -50,10 +47,20 @@
                 Lorem Ipsum has been the industry's standard dummy text ever
                 since the 1500s
               </p>
-              <div>
-                <button class="button button-primary text-2xl">
-                  <span class="py-2 px-6 inline-block"> Start Writing</span>
-                </button>
+              <div class="flex items-center gap-4">
+                <div>
+                  <button class="button button-primary text-2xl">
+                    <span class="py-2 px-6 inline-block">Start Writing</span>
+                  </button>
+                </div>
+                <div>
+                  <a
+                    href="#how-it-works"
+                    class="button button-secondary text-2xl"
+                  >
+                    <span class="py-2 px-6 inline-block">How it works</span>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -960,7 +967,8 @@
             height="46"
             viewBox="0 0 478 46"
             fill="none"
-            id="underline primary"
+            id="underline"
+            class="underline"
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
@@ -991,11 +999,17 @@
                 /></a>
               </header>
               <div>
-                <img src="/business-proposals.png" alt="business proposals" />
+                <img
+                  src="/business-proposals.png"
+                  alt="business proposals"
+                  class="inline-block"
+                />
               </div>
             </article>
             <article class="items-center grid grid-cols-[1fr_0.95fr]">
-              <div class="bg-faint-purple rounded-[10px] h-full p-20 pl-44">
+              <div
+                class="team-call bg-faint-purple rounded-[10px] h-full p-20 pl-44"
+              >
                 <div class="bg-white rounded-xl p-7 flex flex-col gap-3">
                   <div
                     class="relative bg-primary-orange rounded aspect-[278/160]"
@@ -1008,7 +1022,12 @@
                     <img
                       src="/smiling woman.png"
                       alt="smiling woman"
-                      class="absolute -bottom-[1px] w-4/5 mx-auto left-1/2 -translate-x-1/2"
+                      class="absolute -bottom-[1px] w-11/12 mx-auto left-1/2 -translate-x-1/2"
+                    />
+                    <img
+                      src="/microphone.svg"
+                      alt="microphone icon"
+                      class="absolute bottom-4 right-4"
                     />
                   </div>
                   <div class="flex items-center gap-2 5">
@@ -1065,7 +1084,9 @@
                   <img src="/primary-arrow.svg" alt="orange arrow"
                 /></a>
               </header>
-              <div class="bg-faint-purple rounded-[10px] h-full p-20 pl-44">
+              <div
+                class="team-call bg-faint-purple rounded-[10px] h-full p-20 pl-44"
+              >
                 <div class="bg-white rounded-xl p-7 flex flex-col gap-3">
                   <div
                     class="relative bg-primary-yellow rounded aspect-[278/160]"
@@ -1078,7 +1099,12 @@
                     <img
                       src="/smiling woman.png"
                       alt="smiling woman"
-                      class="absolute -bottom-[1px] w-4/5 mx-auto left-1/2 -translate-x-1/2"
+                      class="absolute -bottom-[1px] w-11/12 mx-auto left-1/2 -translate-x-1/2"
+                    />
+                    <img
+                      src="/microphone.svg"
+                      alt="microphone icon"
+                      class="absolute bottom-4 right-4"
                     />
                   </div>
                   <div class="flex items-center gap-2 5">
@@ -1104,7 +1130,9 @@
               </div>
             </article>
             <article class="items-center grid grid-cols-[1fr_0.95fr]">
-              <div class="bg-faint-purple rounded-[10px] h-full p-20 pl-44">
+              <div
+                class="team-call bg-faint-purple rounded-[10px] h-full p-20 pl-44"
+              >
                 <div class="bg-white rounded-xl p-7 flex flex-col gap-3">
                   <div
                     class="relative bg-primary-orange rounded aspect-[278/160]"
@@ -1117,7 +1145,12 @@
                     <img
                       src="/smiling woman.png"
                       alt="smiling woman"
-                      class="absolute -bottom-[1px] w-4/5 mx-auto left-1/2 -translate-x-1/2"
+                      class="absolute -bottom-[1px] w-11/12 mx-auto left-1/2 -translate-x-1/2"
+                    />
+                    <img
+                      src="/microphone.svg"
+                      alt="microphone icon"
+                      class="absolute bottom-4 right-4"
                     />
                   </div>
                   <div class="flex items-center gap-2 5">
@@ -1176,7 +1209,8 @@
             height="36"
             viewBox="0 0 376 36"
             fill="none"
-            id="underline secondary"
+            id="underline"
+            class="underline"
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
@@ -1193,7 +1227,7 @@
               <div class="flex flex-col items-center gap-4">
                 <span
                   class="grid place-items-center bg-primary-orange rounded-full w-16 h-16 text-[#E5E5E5] text-[45px]"
-                  >1</span
+                  ><span>1</span></span
                 >
                 <span class="w-0.5 h-24 bg-faint-blue"></span>
               </div>
@@ -1209,7 +1243,7 @@
               <div class="flex flex-col items-center gap-4">
                 <span
                   class="grid place-items-center bg-primary-orange rounded-full w-16 h-16 text-[#E5E5E5] text-[45px]"
-                  >2</span
+                  ><span>2</span></span
                 >
                 <span class="w-0.5 h-24 bg-faint-blue"></span>
               </div>
@@ -1225,7 +1259,7 @@
               <div class="flex flex-col items-center gap-4">
                 <span
                   class="grid place-items-center bg-primary-orange rounded-full w-16 h-16 text-[#E5E5E5] text-[45px]"
-                  >3</span
+                  ><span>3</span></span
                 >
                 <span class="w-0.5 h-24 bg-faint-blue"></span>
               </div>
@@ -1241,7 +1275,7 @@
               <div class="flex flex-col items-center gap-4">
                 <span
                   class="grid place-items-center bg-primary-orange rounded-full w-16 h-16 text-[#E5E5E5] text-[45px]"
-                  >4</span
+                  ><span>4</span></span
                 >
               </div>
               <div class="flex flex-col gap-4 text-primary-cream">
@@ -1254,165 +1288,17 @@
             </article>
           </div>
         </div>
-        <svg
-          width="680"
-          height="838"
-          viewBox="0 0 680 838"
-          fill="none"
+        <img
           id="how-it-works-artwork"
+          alt="how it works artwork"
+          src="/how-it-works-artwork.svg"
           class="absolute left-0 bottom-0"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M513.16 18.9344L288.943 152.33C304.719 142.957 323.41 138.984 343.455 142.076C399.848 150.741 445.75 211.941 445.869 278.432L670.086 145.036C669.977 78.5128 624.074 17.3232 567.672 8.66891C547.627 5.58822 528.926 9.56161 513.16 18.9344Z"
-            fill="#FE7F3C"
-          />
-          <path
-            d="M513.196 18.9389L288.979 152.334C290.004 151.725 291.049 151.137 292.094 150.56L516.311 17.1645C515.266 17.7305 514.221 18.3075 513.196 18.9389Z"
-            fill="#FE7F3C"
-          />
-          <path
-            d="M516.339 17.1658L292.123 150.562C297.248 147.797 302.633 145.608 308.276 144.041L532.493 10.6452C526.85 12.2345 521.445 14.4334 516.339 17.1658Z"
-            fill="#FE7F3C"
-          />
-          <path
-            d="M532.482 10.6187L308.265 144.014C319.243 140.934 331.126 140.128 343.498 142.055C353.868 143.644 363.861 147.008 373.286 151.841L597.503 18.4456C588.078 13.6123 578.056 10.2376 567.715 8.64828C555.323 6.75415 543.45 7.52709 532.472 10.6187L532.482 10.6187Z"
-            fill="#FE7F3C"
-          />
-          <path
-            d="M597.548 18.4778L373.331 151.873C379.104 154.845 384.637 158.351 389.932 162.346L614.159 28.95C608.884 24.9549 603.321 21.4496 597.558 18.4778L597.548 18.4778Z"
-            fill="#FE7F3C"
-          />
-          <path
-            d="M614.121 28.9406L389.904 162.336C394.223 165.58 398.344 169.184 402.275 173.037L626.492 39.6414C622.561 35.766 618.44 32.1846 614.121 28.9297L614.121 28.9406Z"
-            fill="#FE7F3C"
-          />
-          <path
-            d="M626.502 39.6564L402.275 173.052C405.957 176.655 409.431 180.531 412.725 184.602L636.952 51.2063C633.658 47.1132 630.174 43.2596 626.502 39.6564Z"
-            fill="#FE7F3C"
-          />
-          <path
-            d="M636.972 51.2276L412.755 184.623C416.02 188.684 419.125 192.973 421.992 197.436L646.209 64.0403C643.342 59.5771 640.267 55.299 636.972 51.2385L636.972 51.2276Z"
-            fill="#FE7F3C"
-          />
-          <path
-            d="M646.179 63.9984L421.962 197.394C424.998 202.14 427.795 207.072 430.293 212.188L654.52 78.7925C651.992 73.6761 649.215 68.712 646.179 63.9984Z"
-            fill="#FE7F3C"
-          />
-          <path
-            d="M654.525 78.8091L430.308 212.205C433.284 218.257 435.881 224.549 438.061 231.048L662.288 97.6526C660.108 91.1538 657.501 84.8725 654.525 78.8091Z"
-            fill="#FE7F3C"
-          />
-          <path
-            d="M662.263 97.6608L438.036 231.057C443.082 246.057 445.878 262.092 445.898 278.454L670.115 145.058C670.096 128.697 667.299 112.662 662.253 97.6608L662.263 97.6608Z"
-            fill="#FE7F3C"
-          />
-          <path
-            d="M509.827 12.2012L285.61 145.597C255.284 163.646 235.149 200.549 235.219 246.041L459.436 112.645C459.356 67.1641 479.481 30.25 509.827 12.2012Z"
-            fill="#FBF8E7"
-          />
-          <path
-            d="M509.827 12.213L285.61 145.609C255.284 163.658 235.149 200.561 235.219 246.053L459.436 112.657C459.356 67.1759 479.481 30.2618 509.827 12.213Z"
-            fill="#FBF8E7"
-          />
-          <path
-            d="M670.161 145.03L445.944 278.447L448.442 1745.35L672.659 1611.94L670.161 145.03Z"
-            fill="#FE7F3C"
-          />
-          <path
-            d="M459.436 112.654L235.219 246.049L236.413 942.855L460.63 809.459L459.436 112.654Z"
-            fill="#FBF8E7"
-          />
-          <path
-            d="M118.763 259.175L-105.454 392.571C-89.0812 382.817 -69.6533 378.713 -48.842 381.914C9.63079 390.916 57.2849 454.305 57.4142 523.321L281.631 389.926C281.522 320.876 233.868 257.488 175.375 248.518C154.564 245.317 135.136 249.432 118.763 259.175Z"
-            fill="#FE7F3C"
-          />
-          <path
-            d="M118.697 259.208L-105.52 392.604C-104.455 391.972 -103.38 391.362 -102.295 390.775L121.922 257.379C120.837 257.967 119.742 258.576 118.697 259.208Z"
-            fill="#FE7F3C"
-          />
-          <path
-            d="M121.841 257.376L-102.376 390.771C-97.0512 387.919 -91.4577 385.622 -85.5955 383.99L138.621 250.594C132.769 252.227 127.166 254.513 121.841 257.365L121.841 257.376Z"
-            fill="#FE7F3C"
-          />
-          <path
-            d="M138.678 250.573L-85.5386 383.969C-74.1227 380.768 -61.7912 379.952 -48.952 381.911C-38.203 383.566 -27.7924 387.049 -18.0087 392.079L206.208 258.683C196.425 253.654 186.014 250.148 175.265 248.516C162.396 246.523 150.064 247.351 138.678 250.573Z"
-            fill="#FE7F3C"
-          />
-          <path
-            d="M206.253 258.687L-17.9644 392.083C-11.9827 395.142 -6.21008 398.81 -0.736034 402.947L223.481 269.551C217.987 265.382 212.244 261.746 206.253 258.676L206.253 258.687Z"
-            fill="#FE7F3C"
-          />
-          <path
-            d="M223.501 269.562L-0.715819 402.958C3.75299 406.354 8.04266 410.066 12.1233 414.083L236.34 280.687C232.26 276.66 227.96 272.947 223.501 269.562Z"
-            fill="#FE7F3C"
-          />
-          <path
-            d="M236.352 280.68L12.1348 414.075C15.9367 417.82 19.5496 421.804 22.9734 426.039L247.19 292.643C243.767 288.409 240.164 284.414 236.352 280.669L236.352 280.68Z"
-            fill="#FE7F3C"
-          />
-          <path
-            d="M247.175 292.663L22.958 426.059C26.3519 430.261 29.5567 434.713 32.5127 439.329L256.73 305.933C253.764 301.306 250.579 296.865 247.175 292.663Z"
-            fill="#FE7F3C"
-          />
-          <path
-            d="M256.706 305.963L32.4888 439.358C35.6339 444.268 38.5102 449.384 41.1477 454.686L265.365 321.29C262.757 315.978 259.871 310.861 256.706 305.963Z"
-            fill="#FE7F3C"
-          />
-          <path
-            d="M265.384 321.28L41.167 454.676C44.2424 460.935 46.9396 467.489 49.1989 474.194L273.416 340.799C271.147 334.071 268.459 327.55 265.384 321.291L265.384 321.28Z"
-            fill="#FE7F3C"
-          />
-          <path
-            d="M273.415 340.806L49.1982 474.202C54.4135 489.768 57.3197 506.391 57.3397 523.33L281.557 389.934C281.537 372.963 278.631 356.351 273.415 340.806Z"
-            fill="#FE7F3C"
-          />
-          <path
-            d="M196.471 1022.58L420.688 889.186C444.754 874.849 460.738 845.566 460.678 809.479L236.451 942.875C236.511 978.962 220.527 1008.28 196.471 1022.58Z"
-            fill="#FBF8E7"
-          />
-          <path
-            d="M460.647 809.455L236.43 942.85C236.489 978.937 220.505 1008.25 196.449 1022.56L420.666 889.161C444.732 874.835 460.716 845.541 460.657 809.455L460.647 809.455Z"
-            fill="#FBF8E7"
-          />
-          <path
-            d="M281.612 389.946L57.3946 523.342L58.0614 915.44L282.278 782.045L281.612 389.946Z"
-            fill="#FE7F3C"
-          />
-          <path
-            d="M115.39 252.347L-108.827 385.742C-140.228 404.433 -161.089 442.676 -161 489.779L63.2173 356.383C63.1277 309.28 83.9888 271.07 115.38 252.369L115.38 252.347L115.39 252.347Z"
-            fill="#FBF8E7"
-          />
-          <path
-            d="M115.39 252.372L-108.827 385.767C-140.228 404.469 -161.089 442.711 -161 489.804L63.2173 356.408C63.1277 309.305 83.9888 271.095 115.38 252.393"
-            fill="#FBF8E7"
-          />
-          <path
-            d="M199.848 1029.29L424.065 895.89C409.813 904.381 392.913 907.952 374.789 905.176C323.84 897.349 282.407 842.092 282.297 782.013L58.0801 915.408C58.1896 975.477 99.6231 1030.73 150.572 1038.57C168.696 1041.35 185.596 1037.78 199.848 1029.29Z"
-            fill="#FE7F3C"
-          />
-          <path
-            d="M282.208 782.077L57.9912 915.473C58.0111 930.245 60.5292 944.713 65.0876 958.276L289.305 824.881C284.756 811.328 282.228 796.86 282.208 782.088L282.208 782.077Z"
-            fill="#FE7F3C"
-          />
-          <path
-            d="M289.299 824.857L65.0825 958.252C67.0532 964.12 69.402 969.802 72.0893 975.267L296.306 841.871C293.609 836.407 291.26 830.724 289.299 824.846L289.299 824.857Z"
-            fill="#FE7F3C"
-          />
-          <path
-            d="M63.2171 356.378L-161 489.796L-159.029 1651.98L65.1876 1518.57L63.2171 356.389L63.2171 356.378Z"
-            fill="#FBF8E7"
-          />
-          <path
-            d="M679.003 1612.9L676.505 145.986C676.375 75.3475 627.607 10.4675 567.77 1.27983C507.934 -7.90792 459.354 42.0039 459.464 112.632L460.638 809.437C460.718 865.445 422.19 905.113 374.745 897.798C327.3 890.504 288.604 838.982 288.514 782.985L287.847 390.886C287.718 317.798 237.237 250.599 175.331 241.063C113.424 231.549 63.1327 283.279 63.2621 356.367L65.2326 1518.54L71.473 1519.5L69.5025 357.325C69.393 288.275 116.858 239.517 175.331 248.52C233.804 257.523 281.458 320.911 281.587 389.928L282.254 782.027C282.363 842.095 323.797 897.352 374.745 905.189C425.694 913.016 467.028 870.474 466.918 810.406L465.744 113.601C465.634 47.0768 511.348 -0.0264464 567.74 8.64958C624.133 17.3148 670.035 78.5152 670.155 145.006L672.653 1611.91L678.953 1612.87L678.993 1612.89L679.003 1612.9Z"
-            fill="#FBF8E7"
-          />
-        </svg>
+        />
       </section>
       <section id="get-started" class="bg-primary-cream">
         <div class="container py-16">
           <div
-            class="relative bg-primary-orange rounded-3xl flex px-24 py-44 overflow-hidden"
+            class="relative bg-primary-orange rounded-3xl flex px-24 py-44 overflow-hidden isolate"
           >
             <div class="flex flex-col gap-7 items-start">
               <h2
@@ -1421,14 +1307,16 @@
                 Start writing <br />
                 with Writivo
               </h2>
-              <button class="button button-secondary">
-                <span class="px-1.5">Start Writing</span>
-              </button>
+              <div>
+                <button class="button button-secondary">
+                  <span class="px-1.5">Start Writing</span>
+                </button>
+              </div>
             </div>
             <img
               src="/smiling-girl.png"
               alt="smiling girl"
-              class="absolute right-0 top-0 h-full"
+              class="absolute right-0 top-0 h-full -z-10"
             />
           </div>
         </div>

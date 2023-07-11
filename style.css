@@ -45,7 +45,7 @@ body {
 
 @layer components {
   .button {
-    @apply px-9 py-3 font-medium text-base text-black rounded-full border border-solid border-black hover:scale-105 active:scale-95 transition-transform duration-300;
+    @apply inline-block px-9 py-3 font-medium text-[8px] sm:text-xs md:text-base text-black rounded-full border border-solid border-black hover:scale-105 active:scale-95 transition-transform duration-300;
   }
 
   .button-primary {
@@ -60,5 +60,10 @@ body {
 @layer custom {
   #hero h1 {
     font-kerning: none;
+  }
+
+  .underline path {
+    stroke-dasharray: 611.6172485351562;
+    stroke-dashoffset: 0;
   }
 }
