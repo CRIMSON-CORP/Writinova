@@ -4,7 +4,7 @@ import SplitType from 'split-type';
 import Lenis from '@studio-freight/lenis';
 
 function initLenis() {
-  const lenis = new Lenis();
+  const lenis = new Lenis({ lerp: 0.075 });
 
   lenis.on('scroll', () => {});
 

@@ -51,6 +51,10 @@ body {
   .button-primary {
     @apply bg-primary-orange;
   }
+
+  .button-secondary {
+    @apply bg-primary-cream;
+  }
 }
 
 @layer custom {
