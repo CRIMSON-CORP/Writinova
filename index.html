@@ -19,7 +19,13 @@
       <div class="container">
         <div class="flex items-center justify-between sm:pt-11 pt-6">
           <div class="logo">
-            <img src="/logo.svg" alt="writivo logo" class="w-9/12 sm:w-auto" />
+            <img
+              src="/logo.svg"
+              alt="writivo logo"
+              class="w-9/12 sm:w-auto"
+              width="118"
+              height="38.5"
+            />
           </div>
           <div>
             <button class="button button-primary">Start Writing</button>
@@ -30,18 +36,18 @@
     <main>
       <section
         id="hero"
-        class="bg-[url('/hero-background-pattern.svg')] bg-no-repeat"
+        class="bg-[url('/hero-background-pattern.webp')] bg-no-repeat bg-cover overflow-hidden"
       >
-        <div class="pt-44 isolate">
+        <div class="pt-28 sm:pt-32 md:pt-44 isolate">
           <div class="container">
             <div
-              class="text-center flex flex-col items-center gap-7 max-w-3xl mx-auto"
+              class="text-left sm:text-center flex flex-col items-start sm:items-center gap-7 max-w-3xl mx-auto"
             >
-              <h1 class="text-[64px]">
+              <h1 class="text-4xl sm:text-5xl md:text-[64px]">
                 The Best Online AI Writing Assistant for
                 <span class="text-primary-orange">Presentation</span>
               </h1>
-              <p>
+              <p class="text-sm sm:text-base">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. <br />
                 Lorem Ipsum has been the industry's standard dummy text ever
@@ -49,16 +55,19 @@
               </p>
               <div class="flex items-center gap-4">
                 <div>
-                  <button class="button button-primary text-2xl">
-                    <span class="py-2 px-6 inline-block">Start Writing</span>
+                  <button class="button button-primary">
+                    <span
+                      class="py-2 px-6 inline-block text-[11px] sm:text-base md:text-2xl"
+                      >Start Writing</span
+                    >
                   </button>
                 </div>
                 <div>
-                  <a
-                    href="#how-it-works"
-                    class="button button-secondary text-2xl"
-                  >
-                    <span class="py-2 px-6 inline-block">How it works</span>
+                  <a href="#how-it-works" class="button button-secondary">
+                    <span
+                      class="py-2 px-6 inline-block text-[11px] sm:text-base md:text-2xl"
+                      >How it works</span
+                    >
                   </a>
                 </div>
               </div>
@@ -71,7 +80,7 @@
               viewBox="0 0 1440 637"
               fill="none"
               id="hero-artwork"
-              class="w-full relative -top-32 -z-10"
+              class="w-full relative sm:-top-24 -z-10 max-h-52 sm:max-h-[495px] sm:scale-100 scale-125"
               xmlns="http://www.w3.org/2000/svg"
             >
               <g clip-path="url(#clip0_1170_17469)">
@@ -954,105 +963,137 @@
           </div>
         </div>
       </section>
-      <section id="services" class="pb-28">
-        <header class="flex flex-col items-center mb-14">
-          <h2
-            class="text-center text-5xl leading-tight font-medium text-black-link capitalize"
-          >
-            Start writing like a pro <br />
-            with our aI writing Assistant
-          </h2>
-          <svg
-            width="478"
-            height="46"
-            viewBox="0 0 478 46"
-            fill="none"
-            id="underline"
-            class="underline"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M1.50278 8C1.30777 8.78004 11.4347 7.79969 12.0861 7.75C25.5037 6.72663 38.931 5.55959 52.3639 4.77778C92.4991 2.44187 132.978 3.97506 173.058 6.61111C194.599 8.02784 216.53 8.55758 237.836 12.2778C240.931 12.8181 260.347 14.672 258.142 21.1667C257.432 23.257 254.708 24.3291 252.947 25.1667C247.613 27.7033 242.05 29.7086 236.447 31.5556C224.004 35.6578 211.249 38.9873 199.003 43.6667C193.944 45.5998 200.808 44.6116 202.281 44.3889C215.266 42.4246 228.189 40.0686 241.114 37.75C257.067 34.8881 273.14 32.646 289.169 30.2778C331.477 24.0272 373.775 17.3439 416.225 12.1111C428.347 10.6169 440.545 9.85684 452.669 8.38889C458.291 7.70821 463.954 6.8337 469.614 6.52778C471.104 6.4472 472.376 6.61174 473.753 6C475.48 5.23245 475.273 3.20182 476.003 1.5"
-              stroke="#FE7F3C"
-              stroke-width="2"
-              stroke-linecap="round"
-            />
-          </svg>
-        </header>
+      <section id="services" class="py-28">
         <div class="container">
-          <div class="flex flex-col gap-14">
-            <article class="items-center grid grid-cols-[0.95fr_1fr]">
-              <header class="flex flex-col gap-5 p-5">
-                <h3 class="text-primary-orange font-medium text-5xl">
+          <header
+            class="relative flex flex-col items-center mb-14 max-w-xs sm:max-w-none"
+          >
+            <h2
+              class="text-left sm:text-center text-[29px] sm:text-4xl md:text-5xl leading-tight font-medium text-black-link"
+            >
+              Start Writing Like A Pro <br class="hidden sm:block" />
+              With Our AI Writing Assistant
+            </h2>
+            <svg
+              width="478"
+              height="46"
+              viewBox="0 0 478 46"
+              fill="none"
+              id="underline"
+              class="underline absolute sm:relative bottom-0 right-0 w-3/5 sm:w-full translate-y-4"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1.50278 8C1.30777 8.78004 11.4347 7.79969 12.0861 7.75C25.5037 6.72663 38.931 5.55959 52.3639 4.77778C92.4991 2.44187 132.978 3.97506 173.058 6.61111C194.599 8.02784 216.53 8.55758 237.836 12.2778C240.931 12.8181 260.347 14.672 258.142 21.1667C257.432 23.257 254.708 24.3291 252.947 25.1667C247.613 27.7033 242.05 29.7086 236.447 31.5556C224.004 35.6578 211.249 38.9873 199.003 43.6667C193.944 45.5998 200.808 44.6116 202.281 44.3889C215.266 42.4246 228.189 40.0686 241.114 37.75C257.067 34.8881 273.14 32.646 289.169 30.2778C331.477 24.0272 373.775 17.3439 416.225 12.1111C428.347 10.6169 440.545 9.85684 452.669 8.38889C458.291 7.70821 463.954 6.8337 469.614 6.52778C471.104 6.4472 472.376 6.61174 473.753 6C475.48 5.23245 475.273 3.20182 476.003 1.5"
+                stroke="#FE7F3C"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+          </header>
+          <div class="flex flex-col gap-8 sm:gap-14">
+            <article
+              class="items-center grid lg:grid-cols-[0.95fr_1fr] grid-cols-1 gap-7"
+            >
+              <header class="flex flex-col gap-3 sm:gap-5 sm:p-5">
+                <h3
+                  class="text-primary-orange font-medium text-[34px] min-[393px]:text-[40px] md:text-5xl"
+                >
                   Business Proposals
                 </h3>
-                <p class="text-black-paragraph w-11/12">
+                <p
+                  class="text-black-paragraph w-11/12 text-[13px] sm:text-base"
+                >
                   Presenting a persuasive and professional business proposal is
                   essential for attracting clients and securing partnerships.
                   Our AI platform assists you in crafting a compelling
                   narrative, organizing your ideas, and creating visually
                   appealing proposals.
                 </p>
-                <a href="/learn-more" class="flex items-center gap-2"
-                  ><span class="text-primary-orange">Learn more</span>
-                  <img src="/primary-arrow.svg" alt="orange arrow"
+                <a
+                  href="/learn-more"
+                  class="flex items-center gap-2"
+                  aria-label="Learn more"
+                  ><span class="text-primary-orange font-semibold"
+                    >Learn more</span
+                  >
+                  <img
+                    src="/primary-arrow.svg"
+                    alt="orange arrow"
+                    width="12.5"
+                    height="10.4"
                 /></a>
               </header>
               <div>
                 <img
-                  src="/business-proposals.png"
+                  src="/business-proposals.webp"
                   alt="business proposals"
                   class="inline-block"
+                  width="594"
+                  height="416"
                 />
               </div>
             </article>
-            <article class="items-center grid grid-cols-[1fr_0.95fr]">
+            <article
+              class="items-center grid lg:grid-cols-[0.95fr_1fr] grid-cols-1 gap-7"
+            >
               <div
-                class="team-call bg-faint-purple rounded-[10px] h-full p-20 pl-44"
+                class="team-call bg-faint-purple rounded-[10px] h-full p-10 lg:p-20 pl-16 md:pl-24 lg:pl-44 grid place-items-center"
               >
-                <div class="bg-white rounded-xl p-7 flex flex-col gap-3">
+                <div
+                  class="bg-white rounded-xl p-3 sm:p-7 flex flex-col gap-3 max-w-[200px] md:max-w-xs md:min-w-[322px] w-full mx-auto"
+                >
                   <div
                     class="relative bg-primary-orange rounded aspect-[278/160]"
                   >
                     <img
                       src="/team-call.svg"
                       alt="team call card"
-                      class="absolute -left-[30%] -top-[30%]"
+                      class="absolute -left-[30%] -top-[30%] w-3/4 max-w-fit"
                     />
                     <div
                       class="absolute -bottom-[1px] w-11/12 mx-auto left-1/2 -translate-x-1/2 overflow-hidden"
                     >
-                      <img src="/smiling woman.png" alt="smiling woman" />
+                      <img
+                        src="/smiling-woman.webp"
+                        alt="smiling woman"
+                        width="278"
+                        height="224"
+                      />
                     </div>
                     <img
                       src="/microphone.svg"
                       alt="microphone icon"
-                      class="absolute bottom-4 right-4"
+                      class="absolute bottom-2.5 right-2.5 sm:bottom-4 sm:right-4 origin-bottom-right scale-50 sm:scale-100"
                     />
                   </div>
-                  <div class="flex items-center gap-2 5">
+                  <div class="flex items-center gap-2">
                     <div class="flex items-center">
                       <img
                         src="/smiling-man-1.png"
                         alt="smiling man"
                         width="32"
                         height="32"
-                        class="w-8 h-8 rounded-full"
+                        class="w-5 h-5 sm:w-8 sm:h-8 rounded-full object-cover object-center"
                       />
                       <img
                         src="/smiling-man-2.png"
                         alt="smiling man"
                         width="32"
                         height="32"
-                        class="w-8 h-8 rounded-full bg-[#DAF4FE]"
+                        class="w-5 h-5 sm:w-8 sm:h-8 rounded-full object-cover object-center bg-[#DAF4FE]"
                       />
                     </div>
-                    <p class="text-[9px]">See all call members</p>
+                    <p class="text-[5px] sm:text-[9px]">See all call members</p>
                   </div>
                 </div>
               </div>
-              <header class="flex flex-col gap-5 p-5">
-                <h3 class="text-primary-orange font-medium text-5xl">
+              <header
+                class="flex flex-col gap-3 sm:gap-5 sm:p-5 lg:order-last order-first"
+              >
+                <h3
+                  class="text-primary-orange font-medium text-[34px] min-[393px]:text-[40px] md:text-5xl"
+                >
                   Student Projects
                 </h3>
                 <p class="text-black-paragraph w-11/12">
@@ -1062,15 +1103,28 @@
                   project, and helps improve the clarity and coherence of your
                   content.
                 </p>
-                <a href="/learn-more" class="flex items-center gap-2"
-                  ><span class="text-primary-orange">Learn more</span>
-                  <img src="/primary-arrow.svg" alt="orange arrow"
+                <a
+                  href="/learn-more"
+                  class="flex items-center gap-2"
+                  aria-label="Learn more"
+                  ><span class="text-primary-orange font-semibold"
+                    >Learn more</span
+                  >
+                  <img
+                    src="/primary-arrow.svg"
+                    alt="orange arrow"
+                    width="12.5"
+                    height="10.4"
                 /></a>
               </header>
             </article>
-            <article class="items-center grid grid-cols-[0.95fr_1fr]">
-              <header class="flex flex-col gap-5 p-5">
-                <h3 class="text-primary-orange font-medium text-5xl">
+            <article
+              class="items-center grid lg:grid-cols-[0.95fr_1fr] grid-cols-1 gap-7"
+            >
+              <header class="flex flex-col gap-3 sm:gap-5 sm:p-5">
+                <h3
+                  class="text-primary-orange font-medium text-[34px] min-[393px]:text-[40px] md:text-5xl"
+                >
                   Project Proposals
                 </h3>
                 <p class="text-black-paragraph w-11/12">
@@ -1079,103 +1133,132 @@
                   valuable assistance in articulating your project goals,
                   methodology, and expected outcomes.
                 </p>
-                <a href="/learn-more" class="flex items-center gap-2"
-                  ><span class="text-primary-orange">Learn more</span>
-                  <img src="/primary-arrow.svg" alt="orange arrow"
+                <a
+                  href="/learn-more"
+                  class="flex items-center gap-2"
+                  aria-label="Learn more"
+                  ><span class="text-primary-orange font-semibold"
+                    >Learn more</span
+                  >
+                  <img
+                    src="/primary-arrow.svg"
+                    alt="orange arrow"
+                    width="12.5"
+                    height="10.4"
                 /></a>
               </header>
               <div
-                class="team-call bg-faint-purple rounded-[10px] h-full p-20 pl-44"
+                class="team-call bg-faint-purple rounded-[10px] h-full p-10 lg:p-20 pl-16 md:pl-24 lg:pl-44 grid place-items-center"
               >
-                <div class="bg-white rounded-xl p-7 flex flex-col gap-3">
-                  <div
-                    class="relative bg-primary-yellow rounded aspect-[278/160]"
-                  >
-                    <img
-                      src="/team-call.svg"
-                      alt="team call card"
-                      class="absolute -left-[30%] -top-[30%]"
-                    />
-                    <div
-                      class="absolute -bottom-[1px] w-11/12 mx-auto left-1/2 -translate-x-1/2 overflow-hidden"
-                    >
-                      <img src="/smiling woman.png" alt="smiling woman" />
-                    </div>
-                    <img
-                      src="/microphone.svg"
-                      alt="microphone icon"
-                      class="absolute bottom-4 right-4"
-                    />
-                  </div>
-                  <div class="flex items-center gap-2 5">
-                    <div class="flex items-center">
-                      <img
-                        src="/smiling-man-1.png"
-                        alt="smiling man"
-                        width="32"
-                        height="32"
-                        class="w-8 h-8 rounded-full"
-                      />
-                      <img
-                        src="/smiling-man-2.png"
-                        alt="smiling man"
-                        width="32"
-                        height="32"
-                        class="w-8 h-8 rounded-full bg-[#DAF4FE]"
-                      />
-                    </div>
-                    <p class="text-[9px]">See all call members</p>
-                  </div>
-                </div>
-              </div>
-            </article>
-            <article class="items-center grid grid-cols-[1fr_0.95fr]">
-              <div
-                class="team-call bg-faint-purple rounded-[10px] h-full p-20 pl-44"
-              >
-                <div class="bg-white rounded-xl p-7 flex flex-col gap-3">
+                <div
+                  class="bg-white rounded-xl p-3 sm:p-7 flex flex-col gap-3 max-w-[200px] md:max-w-xs md:min-w-[322px] w-full mx-auto"
+                >
                   <div
                     class="relative bg-primary-orange rounded aspect-[278/160]"
                   >
                     <img
                       src="/team-call.svg"
                       alt="team call card"
-                      class="absolute -left-[30%] -top-[30%]"
+                      class="absolute -left-[30%] -top-[30%] w-3/4 max-w-fit"
                     />
                     <div
                       class="absolute -bottom-[1px] w-11/12 mx-auto left-1/2 -translate-x-1/2 overflow-hidden"
                     >
-                      <img src="/smiling woman.png" alt="smiling woman" />
+                      <img
+                        src="/smiling-woman.webp"
+                        alt="smiling woman"
+                        width="278"
+                        height="224"
+                      />
                     </div>
                     <img
                       src="/microphone.svg"
                       alt="microphone icon"
-                      class="absolute bottom-4 right-4"
+                      class="absolute bottom-2.5 right-2.5 sm:bottom-4 sm:right-4 origin-bottom-right scale-50 sm:scale-100"
                     />
                   </div>
-                  <div class="flex items-center gap-2 5">
+                  <div class="flex items-center gap-2">
                     <div class="flex items-center">
                       <img
                         src="/smiling-man-1.png"
                         alt="smiling man"
                         width="32"
                         height="32"
-                        class="w-8 h-8 rounded-full"
+                        class="w-5 h-5 sm:w-8 sm:h-8 rounded-full object-cover object-center"
                       />
                       <img
                         src="/smiling-man-2.png"
                         alt="smiling man"
                         width="32"
                         height="32"
-                        class="w-8 h-8 rounded-full bg-[#DAF4FE]"
+                        class="w-5 h-5 sm:w-8 sm:h-8 rounded-full object-cover object-center bg-[#DAF4FE]"
                       />
                     </div>
-                    <p class="text-[9px]">See all call members</p>
+                    <p class="text-[5px] sm:text-[9px]">See all call members</p>
                   </div>
                 </div>
               </div>
-              <header class="flex flex-col gap-5 p-5">
-                <h3 class="text-primary-orange font-medium text-5xl">
+            </article>
+            <article
+              class="items-center grid lg:grid-cols-[0.95fr_1fr] grid-cols-1 gap-7"
+            >
+              <div
+                class="team-call bg-faint-purple rounded-[10px] h-full p-10 lg:p-20 pl-16 md:pl-24 lg:pl-44 grid place-items-center"
+              >
+                <div
+                  class="bg-white rounded-xl p-3 sm:p-7 flex flex-col gap-3 max-w-[200px] md:max-w-xs md:min-w-[322px] w-full mx-auto"
+                >
+                  <div
+                    class="relative bg-primary-orange rounded aspect-[278/160]"
+                  >
+                    <img
+                      src="/team-call.svg"
+                      alt="team call card"
+                      class="absolute -left-[30%] -top-[30%] w-3/4 max-w-fit"
+                    />
+                    <div
+                      class="absolute -bottom-[1px] w-11/12 mx-auto left-1/2 -translate-x-1/2 overflow-hidden"
+                    >
+                      <img
+                        src="/smiling-woman.webp"
+                        alt="smiling woman"
+                        width="278"
+                        height="224"
+                      />
+                    </div>
+                    <img
+                      src="/microphone.svg"
+                      alt="microphone icon"
+                      class="absolute bottom-2.5 right-2.5 sm:bottom-4 sm:right-4 origin-bottom-right scale-50 sm:scale-100"
+                    />
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <div class="flex items-center">
+                      <img
+                        src="/smiling-man-1.png"
+                        alt="smiling man"
+                        width="32"
+                        height="32"
+                        class="w-5 h-5 sm:w-8 sm:h-8 rounded-full object-cover object-center"
+                      />
+                      <img
+                        src="/smiling-man-2.png"
+                        alt="smiling man"
+                        width="32"
+                        height="32"
+                        class="w-5 h-5 sm:w-8 sm:h-8 rounded-full object-cover object-center bg-[#DAF4FE]"
+                      />
+                    </div>
+                    <p class="text-[5px] sm:text-[9px]">See all call members</p>
+                  </div>
+                </div>
+              </div>
+              <header
+                class="flex flex-col gap-3 sm:gap-5 sm:p-5 lg:order-last order-first"
+              >
+                <h3
+                  class="text-primary-orange font-medium text-[34px] min-[393px]:text-[40px] md:text-5xl break-words"
+                >
                   IT Logbook/Report
                 </h3>
                 <p class="text-black-paragraph w-11/12">
@@ -1185,9 +1268,18 @@
                   and resources to help you understand the process and structure
                   your own log book effectively.
                 </p>
-                <a href="/learn-more" class="flex items-center gap-2"
-                  ><span class="text-primary-orange">Learn more</span>
-                  <img src="/primary-arrow.svg" alt="orange arrow"
+                <a
+                  href="/learn-more"
+                  class="flex items-center gap-2"
+                  aria-label="Learn more"
+                  ><span class="text-primary-orange font-semibold"
+                    >Learn more</span
+                  >
+                  <img
+                    src="/primary-arrow.svg"
+                    alt="orange arrow"
+                    width="12.5"
+                    height="10.4"
                 /></a>
               </header>
             </article>
@@ -1196,11 +1288,11 @@
       </section>
       <section
         id="how-it-works"
-        class="relative bg-primary-black py-24 overflow-hidden"
+        class="relative bg-primary-black py-12 sm:py-24 overflow-hidden isolate"
       >
-        <header class="flex flex-col items-center mb-24">
+        <header class="flex flex-col items-center mb-6 sm:mb-24">
           <h2
-            class="text-center text-5xl leading-tight font-medium text-primary-orange capitalize"
+            class="text-center text-[26px] sm:text-3xl md:text-5xl leading-tight font-medium text-primary-orange capitalize"
           >
             How does it work?
           </h2>
@@ -1210,7 +1302,7 @@
             viewBox="0 0 376 36"
             fill="none"
             id="underline"
-            class="underline"
+            class="underline w-5/12 md:w-auto"
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
@@ -1221,66 +1313,68 @@
             />
           </svg>
         </header>
-        <div class="container flex justify-end">
+        <div class="container flex justify-center lg:justify-end">
           <div class="flex flex-col gap-2.5">
             <article class="flex items-start gap-5">
-              <div class="flex flex-col items-center gap-4">
+              <div class="flex flex-col items-center gap-2.5 sm:gap-4">
                 <span
-                  class="grid place-items-center bg-primary-orange rounded-full w-16 h-16 text-[#E5E5E5] text-[45px]"
+                  class="grid place-items-center bg-primary-orange rounded-full w-10 h-10 sm:w-16 sm:h-16 text-[#E5E5E5] text-[28px] sm:text-[45px]"
                   ><span>1</span></span
                 >
-                <span class="w-0.5 h-24 bg-faint-blue"></span>
+                <span class="w-0.5 h-14 sm:h-24 bg-faint-blue"></span>
               </div>
-              <div class="flex flex-col gap-4 text-primary-cream">
-                <h3 class="text-4xl">Click on Get Started.</h3>
-                <p class="max-w-sm">
+              <div class="flex flex-col gap-2.5 sm:gap-4 text-primary-cream">
+                <h3 class="text-xl sm:text-4xl">Click on Get Started.</h3>
+                <p class="max-w-[180px] sm:max-w-sm text-[10px] sm:text-base">
                   Once you've filled out the form one of our payment specialists
                   will contact you the same day. It takes about 2 business days
                 </p>
               </div>
             </article>
             <article class="flex items-start gap-5">
-              <div class="flex flex-col items-center gap-4">
+              <div class="flex flex-col items-center gap-2.5 sm:gap-4">
                 <span
-                  class="grid place-items-center bg-primary-orange rounded-full w-16 h-16 text-[#E5E5E5] text-[45px]"
+                  class="grid place-items-center bg-primary-orange rounded-full w-10 h-10 sm:w-16 sm:h-16 text-[#E5E5E5] text-[28px] sm:text-[45px]"
                   ><span>2</span></span
                 >
-                <span class="w-0.5 h-24 bg-faint-blue"></span>
+                <span class="w-0.5 h-14 sm:h-24 bg-faint-blue"></span>
               </div>
-              <div class="flex flex-col gap-4 text-primary-cream">
-                <h3 class="text-4xl">Select the content you want.</h3>
-                <p class="max-w-sm">
+              <div class="flex flex-col gap-2.5 sm:gap-4 text-primary-cream">
+                <h3 class="text-xl sm:text-4xl">
+                  Select the content you want.
+                </h3>
+                <p class="max-w-[180px] sm:max-w-sm text-[10px] sm:text-base">
                   Once you've filled out the form one of our payment specialists
                   will contact you the same day. It takes about 2 business days
                 </p>
               </div>
             </article>
             <article class="flex items-start gap-5">
-              <div class="flex flex-col items-center gap-4">
+              <div class="flex flex-col items-center gap-2.5 sm:gap-4">
                 <span
-                  class="grid place-items-center bg-primary-orange rounded-full w-16 h-16 text-[#E5E5E5] text-[45px]"
+                  class="grid place-items-center bg-primary-orange rounded-full w-10 h-10 sm:w-16 sm:h-16 text-[#E5E5E5] text-[28px] sm:text-[45px]"
                   ><span>3</span></span
                 >
-                <span class="w-0.5 h-24 bg-faint-blue"></span>
+                <span class="w-0.5 h-14 sm:h-24 bg-faint-blue"></span>
               </div>
-              <div class="flex flex-col gap-4 text-primary-cream">
-                <h3 class="text-4xl">Fill the short form.</h3>
-                <p class="max-w-sm">
+              <div class="flex flex-col gap-2.5 sm:gap-4 text-primary-cream">
+                <h3 class="text-xl sm:text-4xl">Fill the short form.</h3>
+                <p class="max-w-[180px] sm:max-w-sm text-[10px] sm:text-base">
                   Once you've filled out the form one of our payment specialists
                   will contact you the same day. It takes about 2 business days
                 </p>
               </div>
             </article>
             <article class="flex items-start gap-5">
-              <div class="flex flex-col items-center gap-4">
+              <div class="flex flex-col items-center gap-2.5 sm:gap-4">
                 <span
-                  class="grid place-items-center bg-primary-orange rounded-full w-16 h-16 text-[#E5E5E5] text-[45px]"
+                  class="grid place-items-center bg-primary-orange rounded-full w-10 h-10 sm:w-16 sm:h-16 text-[#E5E5E5] text-[28px] sm:text-[45px]"
                   ><span>4</span></span
                 >
               </div>
-              <div class="flex flex-col gap-4 text-primary-cream">
-                <h3 class="text-4xl">Download the pdf file.</h3>
-                <p class="max-w-sm">
+              <div class="flex flex-col gap-2.5 sm:gap-4 text-primary-cream">
+                <h3 class="text-xl sm:text-4xl">Download the pdf file.</h3>
+                <p class="max-w-[180px] sm:max-w-sm text-[10px] sm:text-base">
                   Once you've filled out the form one of our payment specialists
                   will contact you the same day. It takes about 2 business days
                 </p>
@@ -1292,79 +1386,106 @@
           id="how-it-works-artwork"
           alt="how it works artwork"
           src="/how-it-works-artwork.svg"
-          class="absolute left-0 bottom-0"
+          class="absolute left-0 bottom-0 hidden md:inline -z-10 md:w-4/12 xl:w-6/12 max-w-fit"
         />
       </section>
       <section id="get-started" class="bg-primary-cream">
-        <div class="container py-16">
+        <div class="container py-7 md:py-16">
           <div
-            class="relative bg-primary-orange rounded-3xl flex px-24 py-44 overflow-hidden isolate"
+            class="relative bg-primary-orange rounded-md md:rounded-3xl flex px-7 py-12 md:px-24 md:py-44 overflow-hidden isolate"
           >
-            <div class="flex flex-col gap-7 items-start">
+            <div class="flex flex-col gap-2 md:gap-7 items-start">
               <h2
-                class="text-primary-black text-[67px] font-bold leading-tight"
+                class="text-primary-black text-lg md:text-[67px] font-bold leading-tight"
               >
                 Start writing <br />
                 with Writivo
               </h2>
               <div>
                 <button class="button button-secondary">
-                  <span class="px-1.5">Start Writing</span>
+                  <span class="md:px-1.5 text-[8px] md:text-base"
+                    >Start Writing</span
+                  >
                 </button>
               </div>
             </div>
             <img
-              src="/smiling-girl.png"
+              src="/smiling-girl.webp"
               alt="smiling girl"
-              class="absolute right-0 top-0 h-full -z-10"
+              class="absolute right-0 top-0 h-full -z-10 object-cover"
             />
           </div>
         </div>
       </section>
     </main>
     <footer class="bg-primary-black">
-      <div class="container py-36">
-        <div class="flex items-center gap-6 justify-between">
-          <div class="flex flex-col gap-14 items-start">
-            <img src="logo-footer-light.svg" alt="writivo logo" />
-            <p class="text-[#CACACA] text-xl">
+      <div class="container py-8 sm:py-36">
+        <div class="flex flex-wrap-reverse items-center gap-6 justify-between">
+          <div class="flex flex-col gap-2.5 sm:gap-14 items-start">
+            <img
+              src="logo-footer-light.svg"
+              alt="writivo logo"
+              class="w-4/12 sm:w-auto"
+            />
+            <p class="text-[#CACACA] text-[10px] sm:text-xl">
               © Copyright 2023, All Rights Reserved
             </p>
           </div>
-          <div class="flex flex-col gap-2.5">
-            <h3 class="text-[26px] font-semibold text-primary-orange">
-              Socials
-            </h3>
-            <ul class="text-primary-cream text-xl font-medium grid gap-4">
-              <li><a href="">Twitter</a></li>
-              <li><a href="">Instagram</a></li>
-              <li><a href="">LinkedIn</a></li>
-            </ul>
-          </div>
-          <div class="flex flex-col gap-4">
-            <div class="flex flex-col gap-2.5">
-              <h3 class="text-[26px] font-semibold text-primary-orange">
-                Contact
-              </h3>
-              <a
-                href="mailto:hello@writivo.ai"
-                class="text-primary-cream text-xl font-medium grid gap-4"
+          <div
+            class="flex flex-wrap items-center gap-6 justify-between flex-grow"
+          >
+            <div class="flex flex-col gap-1.5 sm:gap-2.5">
+              <h3
+                class="text-xs sm:text-[26px] font-semibold text-primary-orange"
               >
-                hello@writivo.ai
-              </a>
-            </div>
-            <div class="flex flex-col gap-2.5">
-              <h3 class="text-[26px] font-semibold text-primary-orange">
-                Address
+                Socials
               </h3>
-              <p class="text-primary-cream text-xl font-medium grid gap-4">
-                Lekki Phase 1, Lagos, 100275, Nigeria
-              </p>
+              <ul
+                class="text-primary-cream text-[10px] sm:text-xl font-medium grid gap-2 sm:gap-4"
+              >
+                <li><a href="https://www.twitter.com/writivo/">Twitter</a></li>
+                <li>
+                  <a href="https://www.instagram.com/writivo/">Instagram</a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/in/writivo/">LinkedIn</a>
+                </li>
+              </ul>
+            </div>
+            <div class="flex flex-col gap-4">
+              <div class="flex flex-col gap-1.5 sm:gap-2.5">
+                <h3
+                  class="text-xs sm:text-[26px] font-semibold text-primary-orange"
+                >
+                  Contact
+                </h3>
+                <a
+                  href="mailto:hello@writivo.ai"
+                  class="text-primary-cream text-[10px] sm:text-xl font-medium grid gap-4"
+                >
+                  hello@writivo.ai
+                </a>
+              </div>
+              <div class="flex flex-col gap-1.5 sm:gap-2.5">
+                <h3
+                  class="text-xs sm:text-[26px] font-semibold text-primary-orange"
+                >
+                  Address
+                </h3>
+                <address
+                  class="text-primary-cream text-[10px] sm:text-xl font-medium grid gap-4"
+                >
+                  Lekki Phase 1, Lagos, <br />100275, Nigeria
+                </address>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </footer>
+    <span
+      class="follow-cursor w-1.5 h-1.5 rounded-lg bg-primary-orange absolute"
+    ></span>
     <script type="module" src="/main.js"></script>
   </body>
 </html>

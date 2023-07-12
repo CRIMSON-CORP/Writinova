@@ -64,8 +64,8 @@ function heroSectionAnimation() {
 }
 
 function servicesAnimation() {
-  const header = '#services > header > h2';
-  const underline = '#services > header > #underline > path';
+  const header = '#services  header > h2';
+  const underline = '#services  header > #underline > path';
   const articleContents = '#services .container article header';
   const articleImage = '#services .container article > div > img';
   const teamCall = '#services .container article .team-call';
@@ -311,9 +311,29 @@ function getStartedAnimation() {
     );
 }
 
+function followCursor() {
+  const element = utils.getElem('.follow-cursor');
+
+  window.addEventListener('mousemove', (e) => {
+    const positionX = e.pageX;
+    const positionY = e.pageY;
+
+    element.animate(
+      {
+        left: positionX + 'px',
+        top: positionY + 'px',
+      },
+      { duration: 400, fill: 'forwards' }
+    );
+    // element.style.left = positionX + 'px';
+    // element.style.top = positionY + 'px';
+  });
+}
+
 initLenis();
 headerSectionAnimation();
 heroSectionAnimation();
 servicesAnimation();
 howItWorksAnimation();
 getStartedAnimation();
+followCursor();

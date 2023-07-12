@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=IBM+Plex+Sans:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic);
+@import url(https://fonts.googleapis.com/css?family=IBM+Plex+Sans:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic&display=swap);
 
 @tailwind base;
 @tailwind components;
@@ -46,7 +46,7 @@ body {
 
 @layer components {
   .button {
-    @apply inline-block px-9 py-3 font-medium text-[8px] sm:text-xs md:text-base text-black rounded-full border border-solid border-black hover:scale-105 active:scale-95 transition-transform duration-300;
+    @apply inline-block px-4 sm:px-6 md:px-9 py-1.5 sm:py-2 md:py-3 font-medium text-[8px] sm:text-xs md:text-base text-black rounded-full border border-solid border-black hover:scale-105 active:scale-95 transition-transform duration-300;
   }
 
   .button-primary {
