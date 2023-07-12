@@ -3,6 +3,7 @@ import { gsap, Power3, Expo } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import SplitType from 'split-type';
 import Lenis from '@studio-freight/lenis';
+import Typewriter from 'typewriter-effect/dist/core';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -23,6 +24,23 @@ function initLenis() {
   }
 
   requestAnimationFrame(raf);
+}
+
+function typeWritterEffect() {
+  new Typewriter('#hero h1 .writer', {
+    strings: [
+      'Presentions',
+      'Essays',
+      'Letters',
+      'SMS',
+      'IT LogBook',
+      'IT Report',
+      'Project',
+      'Proposals',
+    ],
+    autoStart: true,
+    loop: true,
+  });
 }
 
 function headerSectionAnimation() {
@@ -331,6 +349,7 @@ function followCursor() {
 }
 
 initLenis();
+typeWritterEffect();
 headerSectionAnimation();
 heroSectionAnimation();
 servicesAnimation();
