@@ -67,4 +67,8 @@ body {
     stroke-dasharray: 611.6172485351562;
     stroke-dashoffset: 0;
   }
+
+  .line {
+    text-align: inherit !important;
+  }
 }
