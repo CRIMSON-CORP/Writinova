@@ -121,13 +121,26 @@ function servicesAnimation() {
     });
 
     timeline
+      // main team call wrapper
       .from(element, { opacity: 0, duration: 1 })
-      .from(element.children, {
+      // The box with white background
+      .from(element.children[0], {
         opacity: 0,
         scale: 0.75,
         duration: 0.75,
         ease: 'back.out(2)',
       })
+      .from(
+        element.children[0].children[0],
+        {
+          opacity: 0,
+          scale: 0.75,
+          duration: 0.75,
+          ease: 'back.out(2)',
+        },
+        '-=0.25'
+      )
+      // Team call card/box, with dark background
       .from(
         element.children[0].children[0].children[0],
         {
@@ -138,6 +151,18 @@ function servicesAnimation() {
         },
         '-=0.5'
       )
+      // The image of the smilling woman
+      .from(
+        element.children[0].children[0].children[1].children[0],
+        {
+          opacity: 0,
+          y: '100%',
+          duration: 1,
+          ease: 'expo.out(2)',
+        },
+        '-=0.5'
+      )
+      //The microphone icon
       .from(
         element.children[0].children[0].children[2],
         {
@@ -148,6 +173,7 @@ function servicesAnimation() {
         },
         '-=0.5'
       )
+      // The section bellow the inner box
       .from(
         element.children[0].children[1].children,
         {
@@ -155,7 +181,7 @@ function servicesAnimation() {
           y: 20,
           stagger: 0.125,
         },
-        '-=0.5'
+        '-=0.75'
       );
   });
 }
@@ -247,11 +273,17 @@ function howItWorksAnimation() {
 }
 
 function getStartedAnimation() {
-  const timeline = gsap.timeline();
+  const getStarted = '#get-started';
   const header = '#get-started h2';
   const buttonWrapper = '#get-started .container > div > div > div';
   const image = '#get-started .container > div > img';
   const text = new SplitType(header);
+  const timeline = gsap.timeline({
+    scrollTrigger: {
+      trigger: getStarted,
+      start: 'top 70%',
+    },
+  });
 
   timeline
     .from(text.chars, {
@@ -259,30 +291,24 @@ function getStartedAnimation() {
       stagger: 0.025,
       ease: Power3.easeOut(),
       duration: 2,
-      scrollTrigger: {
-        trigger: header,
-        start: 'top 70%',
-      },
     })
-    .from(buttonWrapper, {
-      opacity: 0,
-      y: '100%',
-      ease: Expo.easeOut(),
-      duration: 1,
-      scrollTrigger: {
-        trigger: buttonWrapper,
-        start: 'top 70%',
+    .from(
+      buttonWrapper,
+      {
+        opacity: 0,
+        y: '100%',
+        ease: Expo.easeOut(),
+        duration: 1,
       },
-    })
-    .from(image, {
-      opacity: 0,
-      scrollTrigger: {
-        trigger: image,
-        start: 'top 70%',
+      '-=1.5'
+    )
+    .from(
+      image,
+      {
+        opacity: 0,
       },
-    });
-
-  console.log();
+      '-=1'
+    );
 }
 
 initLenis();
