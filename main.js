@@ -333,18 +333,13 @@ function followCursor() {
   const element = utils.getElem('.follow-cursor');
 
   window.addEventListener('mousemove', (e) => {
-    const positionX = e.pageX;
-    const positionY = e.pageY;
-
     element.animate(
       {
-        left: positionX + 'px',
-        top: positionY + 'px',
+        left: e.pageX + 'px',
+        top: e.pageY + 'px',
       },
       { duration: 400, fill: 'forwards' }
     );
-    // element.style.left = positionX + 'px';
-    // element.style.top = positionY + 'px';
   });
 }
 
