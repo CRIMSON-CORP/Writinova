@@ -244,7 +244,7 @@ function howItWorksAnimation() {
     const timeline = gsap.timeline({
       scrollTrigger: {
         trigger: element,
-        start: 'center 80%',
+        start: 'top 80%',
       },
     });
 
@@ -262,7 +262,7 @@ function howItWorksAnimation() {
           opacity: 0,
           ease: 'back.out(1.7)',
         },
-        '-=0.25'
+        '-=1'
       );
     if (element.children[0].children[1] !== undefined) {
       timeline.from(
@@ -275,18 +275,31 @@ function howItWorksAnimation() {
         },
         '-=0.125'
       );
+      timeline.from(
+        element.children[1].children,
+        {
+          opacity: 0,
+          y: 150,
+          ease: 'expo.out()',
+          duration: 1.5,
+          stagger: 0.125,
+        },
+        '-=1'
+      );
+    } else {
+      timeline.from(
+        element.children[1].children,
+        {
+          opacity: 0,
+          y: 150,
+          ease: 'expo.out()',
+          duration: 1.5,
+          stagger: 0.125,
+          delay: 1.5,
+        },
+        '-=1'
+      );
     }
-    timeline.from(
-      element.children[1].children,
-      {
-        opacity: 0,
-        y: 150,
-        ease: 'expo.out()',
-        duration: 1.5,
-        stagger: 0.125,
-      },
-      '-=1'
-    );
   });
 }
 
