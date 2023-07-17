@@ -82,126 +82,219 @@ function heroSectionAnimation() {
 }
 
 function servicesAnimation() {
-  const header = '#services  header > h2';
-  const underline = '#services  header > #underline > path';
-  const articleContents = '#services .container article header';
-  const articleImage = '#services .container article > div > img';
-  const teamCall = '#services .container article .team-call';
-  const text = new SplitType(header);
-  gsap.from(text.chars, {
-    opacity: 0,
-    stagger: 0.025,
-    ease: Power3.easeOut(),
-    duration: 2,
-    scrollTrigger: {
-      trigger: header,
-      start: 'top 70%',
-    },
-  });
-  gsap.from(underline, {
-    strokeDashoffset: 611.617,
-    ease: Expo.easeOut(),
-    duration: 2,
-    scrollTrigger: {
-      trigger: underline,
-      start: 'top 70%',
-    },
-  });
-  document.querySelectorAll(articleContents).forEach((element) => {
-    gsap.from(element.children, {
-      opacity: 0,
-      y: '100%',
-      ease: Expo.easeOut(),
-      duration: 1,
-      stagger: 0.25,
-      scrollTrigger: {
-        trigger: element,
-        start: 'top 70%',
-      },
+  function commonAnimationTimeline() {
+    const serviceImageContainer = utils.getAllElem('.service-image-container');
+
+    serviceImageContainer.forEach((element) => {
+      const timeline = gsap.timeline({
+        scrollTrigger: {
+          trigger: element,
+          start: 'center 80%',
+        },
+      });
+
+      timeline
+        .from(element, {
+          scale: 0.5,
+          opacity: 0,
+          ease: 'back.out(2)',
+          duration: 1.25,
+        })
+        .from(
+          element.children[0],
+          {
+            opacity: 0,
+            y: '80%',
+            ease: 'expo.out()',
+            duration: 1.25,
+          },
+          '-=0.75'
+        )
+        .from(
+          utils.getChild(element, '.content'),
+          {
+            opacity: 0,
+            y: '80%',
+            ease: 'expo.out()',
+            duration: 1.25,
+          },
+          '-=0.75'
+        );
     });
-  });
-  gsap.from(articleImage, {
-    scale: 0.9,
-    opacity: 0,
-    duration: 2,
-    ease: Expo.easeOut(),
-    scrollTrigger: {
-      trigger: articleImage,
-      start: 'top 70%',
-    },
-  });
-  document.querySelectorAll(teamCall).forEach((element) => {
+  }
+  function businessProposalAnimationTimeline() {
+    const businessProposal = utils.getElem(
+      '#business-proposals .service-image-container'
+    );
+
     const timeline = gsap.timeline({
+      delay: 1.5,
       scrollTrigger: {
-        trigger: element,
+        trigger: businessProposal,
         start: 'top 70%',
       },
     });
 
     timeline
-      // main team call wrapper
-      .from(element, { opacity: 0, duration: 1 })
-      // The box with white background
-      .from(element.children[0], {
+      .from('#business-proposals svg#fingerprint', {
+        ease: Expo.easeOut(),
+        x: '-80%',
         opacity: 0,
-        scale: 0.75,
-        duration: 0.75,
-        ease: 'back.out(2)',
+        duration: 2,
+        transformOrigin: 'left top',
       })
       .from(
-        element.children[0].children[0],
+        '#business-proposals .content > div > div > svg',
         {
+          ease: Expo.easeOut(),
+          x: 100,
           opacity: 0,
-          scale: 0.75,
-          duration: 0.75,
-          ease: 'back.out(2)',
         },
-        '-=0.25'
+        '-=2'
       )
-      // Team call card/box, with dark background
       .from(
-        element.children[0].children[0].children[0],
+        '#business-proposals .content > div > div > div > *',
         {
-          opacity: 0,
-          scale: 0.5,
-          duration: 0.75,
-          ease: 'back.out(2)',
-        },
-        '-=0.5'
-      )
-      // The image of the smilling woman
-      .from(
-        element.children[0].children[0].children[1].children[0],
-        {
-          opacity: 0,
-          y: '100%',
-          duration: 1,
-          ease: 'expo.out(2)',
-        },
-        '-=0.5'
-      )
-      //The microphone icon
-      .from(
-        element.children[0].children[0].children[2],
-        {
-          opacity: 0,
-          scale: 0.5,
-          duration: 0.75,
-          ease: 'back.out(2)',
-        },
-        '-=0.5'
-      )
-      // The section bellow the inner box
-      .from(
-        element.children[0].children[1].children,
-        {
-          opacity: 0,
+          ease: Expo.easeOut(),
           y: 20,
-          stagger: 0.125,
+          opacity: 0,
+          stagger: 0.25,
         },
-        '-=0.75'
+        '-=1.5'
       );
-  });
+  }
+  function studentProjectAnimationTimeline() {
+    const studentProject = utils.getElem(
+      '#student-project .service-image-container'
+    );
+    const text = new SplitType('#student-project .content span');
+
+    const timeline = gsap.timeline({
+      scrollTrigger: {
+        trigger: studentProject,
+        start: 'top 70%',
+        markers: true,
+      },
+      delay: 1.75,
+    });
+
+    timeline
+      .from(text.chars, {
+        opacity: 0,
+        stagger: 0.025,
+        ease: Power3.easeOut(),
+        duration: 2,
+      })
+      .from(
+        utils.getChild(studentProject, 'svg').children,
+        {
+          scale: 0.4,
+          opacity: 0,
+          ease: 'back.out(2)',
+          duration: 1,
+          stagger: 0.125,
+          transformOrigin: 'center',
+        },
+        '-=2.25'
+      );
+  }
+  function projectProposalsAnimationTimeline() {
+    const projectProposals = utils.getElem(
+      '#project-proposals .service-image-container'
+    );
+    const text = new SplitType(
+      '#project-proposals .service-image-container span'
+    );
+
+    const timeline = gsap.timeline({
+      scrollTrigger: {
+        trigger: projectProposals,
+        start: 'top 70%',
+      },
+      delay: 1.75,
+    });
+
+    timeline
+      .from(text.chars, {
+        opacity: 0,
+        stagger: 0.025,
+        ease: Power3.easeOut(),
+        duration: 2,
+      })
+      .from(
+        '#project-proposals .service-image-container svg #background',
+        {
+          scale: 0.4,
+          opacity: 0,
+          ease: 'back.out(1.7)',
+          duration: 1,
+          stagger: 0.125,
+          transformOrigin: 'center',
+        },
+        '-=2.25'
+      )
+      .from(
+        utils.getAllElem(
+          '#project-proposals .service-image-container svg .wrapper > g > *'
+        ),
+        {
+          y: 50,
+          opacity: 0,
+          ease: 'expo.out()',
+          duration: 1,
+          stagger: 0.125,
+          transformOrigin: 'center',
+        },
+        '-=2'
+      );
+  }
+  function iTReportAnimationTimeline() {
+    const projectProposals = utils.getElem(
+      '#it-reports .service-image-container'
+    );
+    const text = new SplitType(
+      '#it-reports .service-image-container span:first-child'
+    );
+
+    const timeline = gsap.timeline({
+      scrollTrigger: {
+        trigger: projectProposals,
+        start: 'top 70%',
+      },
+      delay: 1.75,
+    });
+
+    timeline
+      .from(text.chars, {
+        opacity: 0,
+        stagger: 0.025,
+        ease: Power3.easeOut(),
+        duration: 2,
+      })
+      .from(
+        '#it-reports .service-image-container span:last-child',
+        {
+          y: 50,
+          opacity: 0,
+          ease: 'expo.out()',
+          duration: 1.5,
+        },
+        '-=2'
+      )
+      .from(
+        '#it-reports .service-image-container svg>g>*',
+        {
+          opacity: 0,
+          stagger: 0.125 / 3,
+        },
+        '-=2'
+      );
+  }
+  commonAnimationTimeline();
+  businessProposalAnimationTimeline();
+  studentProjectAnimationTimeline();
+  projectProposalsAnimationTimeline();
+  iTReportAnimationTimeline();
 }
 
 function howItWorksAnimation() {

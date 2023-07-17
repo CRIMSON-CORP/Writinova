@@ -56,6 +56,16 @@ body {
   .button-secondary {
     @apply bg-primary-cream;
   }
+
+  .service-image-container {
+    @apply relative bg-primary-cream rounded-xl px-8 text-[5px] sm:text-[10px] overflow-hidden;
+  }
+  .service-image-container > .wrapper {
+    @apply translate-y-4;
+  }
+  .service-image-container > .wrapper > .content {
+    @apply absolute z-10 inset-[2.5em_1.4em_0] min-[420px]:inset-[3.5em_1.8em_0] lg:inset-[2.5em_1.4em_0] rounded-[0.8em] overflow-hidden;
+  }
 }
 
 @layer custom {
