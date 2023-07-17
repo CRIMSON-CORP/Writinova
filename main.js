@@ -173,7 +173,6 @@ function servicesAnimation() {
       scrollTrigger: {
         trigger: studentProject,
         start: 'top 70%',
-        markers: true,
       },
       delay: 1.75,
     });
