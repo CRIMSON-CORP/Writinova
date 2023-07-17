@@ -1,4 +1,4 @@
-# Writivo
+# Writinova
 
 A web based Application built with Vite + Reactjs used writing content with AI
 
@@ -14,20 +14,20 @@ A web based Application built with Vite + Reactjs used writing content with AI
 
 ## Demo
 
-Live demo of the Application can be found [here](https://writivo.netlify.app/)
+Live demo of the Application can be found [here](https://Writinova.netlify.app/)
 
 ## Run Locally
 
 To run this project locally, Clone the project
 
 ```bash
-  git clone https://github.com/CRIMSON-CORP/Writivo
+  git clone https://github.com/CRIMSON-CORP/Writinova
 ```
 
 Then go to the project directory
 
 ```bash
-  cd Writivo
+  cd Writinova
 ```
 
 Install dependencies, you can use npm or yarn, I used yarn in this project
