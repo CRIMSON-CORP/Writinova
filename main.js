@@ -1,5 +1,5 @@
 import './style.css';
-import { gsap, Power3, Expo } from 'gsap';
+import { gsap, Power3, Power1, Expo } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import SplitType from 'split-type';
 import Lenis from '@studio-freight/lenis';
@@ -27,20 +27,22 @@ function initLenis() {
 }
 
 function typeWritterEffect() {
-  new Typewriter('#hero h1 .writer', {
-    strings: [
-      'Presentions',
-      'Essays',
-      'Letters',
-      'SMS',
-      'IT LogBook',
-      'IT Report',
-      'Project',
-      'Proposals',
-    ],
-    autoStart: true,
-    loop: true,
-  });
+  setTimeout(() => {
+    new Typewriter('#hero h1 .writer', {
+      strings: [
+        'Essays',
+        'Letters',
+        'SMS',
+        'IT LogBook',
+        'IT Report',
+        'Project',
+        'Proposals',
+        'Presentions',
+      ],
+      autoStart: true,
+      loop: true,
+    });
+  }, 5000);
 }
 
 function headerSectionAnimation() {
@@ -58,8 +60,8 @@ function heroSectionAnimation() {
   heroAnimationTimeline
     .from(text.chars, {
       opacity: 0,
-      stagger: 0.025,
-      ease: Power3.easeOut(),
+      stagger: 0.125 / 3.5,
+      ease: Power1.easeOut(),
       duration: 2,
     })
     .from(
