@@ -110,13 +110,16 @@ function servicesAnimation() {
     });
   }
   function commonAnimationTimeline() {
-    const serviceImageContainer = utils.getAllElem('.service-image-container');
+    const serviceImageContainer = utils.getAllElem(
+      '#services .service-image-container'
+    );
+    const serviceContent = utils.getAllElem('#services article header');
 
     serviceImageContainer.forEach((element) => {
       const timeline = gsap.timeline({
         scrollTrigger: {
           trigger: element,
-          start: 'center 80%',
+          start: 'top 70%',
         },
       });
 
@@ -145,8 +148,25 @@ function servicesAnimation() {
             ease: 'expo.out()',
             duration: 1.25,
           },
-          '-=0.75'
+          '-=0.85'
         );
+    });
+
+    serviceContent.forEach((element) => {
+      const timeline = gsap.timeline({
+        scrollTrigger: {
+          trigger: element,
+          start: 'top 70%',
+        },
+      });
+
+      timeline.from(element.children, {
+        y: 100,
+        opacity: 0,
+        ease: 'expo.out()',
+        stagger: 0.175,
+        duration: 1.5,
+      });
     });
   }
   function businessProposalAnimationTimeline() {
@@ -155,7 +175,7 @@ function servicesAnimation() {
     );
 
     const timeline = gsap.timeline({
-      delay: 1.5,
+      delay: 1.25,
       scrollTrigger: {
         trigger: businessProposal,
         start: 'top 70%',
@@ -201,7 +221,7 @@ function servicesAnimation() {
         trigger: studentProject,
         start: 'top 70%',
       },
-      delay: 1.75,
+      delay: 1.5,
     });
 
     timeline
@@ -237,7 +257,7 @@ function servicesAnimation() {
         trigger: projectProposals,
         start: 'top 70%',
       },
-      delay: 1.75,
+      delay: 1.5,
     });
 
     timeline
@@ -287,7 +307,7 @@ function servicesAnimation() {
         trigger: projectProposals,
         start: 'top 70%',
       },
-      delay: 1.75,
+      delay: 1.5,
     });
 
     timeline
