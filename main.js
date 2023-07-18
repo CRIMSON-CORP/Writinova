@@ -84,6 +84,31 @@ function heroSectionAnimation() {
 }
 
 function servicesAnimation() {
+  function headerAnimation() {
+    const header = '#services  header > h2';
+    const underline = '#services  header > #underline > path';
+
+    const text = new SplitType(header);
+    gsap.from(text.chars, {
+      opacity: 0,
+      stagger: 0.025,
+      ease: Power3.easeOut(),
+      duration: 2,
+      scrollTrigger: {
+        trigger: header,
+        start: 'top 70%',
+      },
+    });
+    gsap.from(underline, {
+      strokeDashoffset: 611.617,
+      ease: Expo.easeOut(),
+      duration: 2,
+      scrollTrigger: {
+        trigger: underline,
+        start: 'top 70%',
+      },
+    });
+  }
   function commonAnimationTimeline() {
     const serviceImageContainer = utils.getAllElem('.service-image-container');
 
@@ -291,6 +316,7 @@ function servicesAnimation() {
         '-=2'
       );
   }
+  headerAnimation();
   commonAnimationTimeline();
   businessProposalAnimationTimeline();
   studentProjectAnimationTimeline();
@@ -431,8 +457,11 @@ function getStartedAnimation() {
       image,
       {
         opacity: 0,
+        x: '5%',
+        duration: 2,
+        ease: 'expo.out()',
       },
-      '-=1'
+      '-=1.5'
     );
 }
 
