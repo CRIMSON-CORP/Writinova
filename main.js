@@ -37,7 +37,7 @@ function typeWritterEffect() {
         'IT Report',
         'Project',
         'Proposals',
-        'Presentions',
+        'Presentations',
       ],
       autoStart: true,
       loop: true,
